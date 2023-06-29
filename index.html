@@ -1,0 +1,274 @@
+<html>
+
+<head>
+    <title>My profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    #topContainer
+    {
+       
+     
+        margin: auto; 
+        flex: 1;
+    }
+    #MainContainer {
+        width: 90%;
+        height: auto;
+        background-color: black;
+      
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #top_links {
+
+        margin: 3%;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between
+    }
+
+    .Button {
+        flex: 1;
+        color: white;
+        text-align: center;
+        margin: auto;
+
+
+
+    }
+
+
+
+
+    #topic {
+        flex: 2;
+        color: white;
+        display: flex;
+        font-size: 30px;
+
+    }
+
+    #text {
+        margin-top: 1%;
+        color: white;
+
+        flex: 2;
+
+        font-size: 27px;
+        margin-bottom: 15%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #mainName {
+        font-size: 3vw;
+        text-decoration: solid;
+
+    }
+
+    #linkContainer {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        margin: 3%;
+
+        margin-left: 15%;
+
+    }
+
+    .link {
+        width: 100%;
+        height: 24px;
+        flex: 1;
+
+    }
+
+    #my_profile {
+
+        width: 15VW;
+
+        margin: auto;
+        border-radius: 99%;
+
+        border: solid;
+        border-width: 5px;
+        border-color: white;
+
+    }
+
+    #profileImageContainer {
+
+        margin-bottom: 10%;
+        flex: 1;
+        margin-right: 10%;
+        margin-right: 3%;
+
+
+        display: flex;
+
+
+
+    }
+
+    #mainText {
+        font-size: 5VW;
+        flex-direction: column;
+
+        margin-left: 15%;
+
+
+
+    }
+
+    #innerText {
+        font-size: 3vw;
+        margin-left: 15%;
+    }
+
+    #endText {
+        font-size: 12px;
+        margin-left: 15%;
+    }
+
+    #bottomContainer {
+
+        flex-direction: column;
+
+        display: flex;
+    }
+
+    #bottomContainerName {
+        text-align: center;
+        color: white;
+        margin: auto;
+        font-size: 3vw;
+
+
+
+    }
+
+    #iconsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        margin: 2%;
+
+    }
+
+    #Icons {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+
+
+
+
+    }
+
+    .IconsName {
+
+        width: auto;
+        height: 3vw;
+        flex: 1;
+
+
+
+
+    }
+
+    #top_menu {
+        flex: 4;
+        display: flex;
+        flex-direction: row;
+
+
+    }
+</style>
+
+<body background=images/background.svg style="background-size: cover; display:flex">
+    <div id="topContainer">
+        <div id="MainContainer">
+            <div id="top_links">
+                <div>
+                    <p class="Button" id="mainName">
+                        Sonali Singh
+                    </p>
+                </div>
+                <div id="top_menu">
+                    <a href="" class='Button'>
+                        <div>Home</div>
+                    </a>
+                    <a class='Button'
+                        href="https://drive.google.com/file/d/1_Y_ugVRoU7rOlRDmeKqiaUkN78yF8OR1/view?usp=sharing">
+                        <div>Resume</div>
+                    </a>
+                    <a href="projects.html" class='Button'>
+                        <div>Projects</div>
+                    </a>
+                </div>
+
+
+
+
+            </div>
+            <div id="topic">
+                <div id="text">
+                    <b id='mainText'> Frontend web <br>
+                        Developer !
+                    </b>
+                    <br>
+
+                    <b id="innerText">Hi, I'm Sonali Singh. A passionate Front-end Web
+                        <br>Developer from India.</b>
+                    <div id='linkContainer'>
+                        <a href="https://www.linkedin.com/in/sonali-singh-8438ab23a/">
+
+                            <img src="images/linkedin.svg" class="link">
+                        </a>
+                        <a class="link" style="margin-left: 5%" href="https://github.com/sonalisingh30">
+                            <img src="images/github_icons.svg" style="height: 24px;">
+                        </a>
+
+
+                    </div>
+
+                </div>
+                <div id="profileImageContainer">
+                    <img src="images/profile_photo.jpg" id="my_profile">
+
+                </div>
+
+            </div>
+            <div id="bottomContainer">
+
+                <b id="bottomContainerName"> Tech Stocks</b>
+
+
+
+                <div id="Icons">
+                    <div style="flex:1"></div>
+                    <div id="iconsContainer">
+                        <img src="images/html-5.svg" class="IconsName">
+                        <img src="images/css.svg" class="IconsName">
+                        <img src="images/javascript.svg" class="IconsName">
+                        <img src="images/sql.svg" class="IconsName">
+                    </div>
+                    <div style="flex: 1;"></div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+
+</body>
+
+</html>

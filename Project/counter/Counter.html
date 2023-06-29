@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>counter</title>
+    </head>
+    <style>
+        #mainbody
+        {
+display: flex;
+           flex-direction: column;
+           background-color: bisque;
+          
+        }
+        #topText
+        {
+           flex:1;
+           
+           text-align: center;
+           margin-top: 10%;
+        }
+        #textContainer
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        #numberContainer
+        {
+            flex:1;
+           
+            color: green;
+        }
+        #button
+        {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        
+            
+        }
+        .clickbutton
+        {
+            flex: 1;
+            background-color: lightblue;
+           margin-left: 20vw;
+           margin-right: 20vw;
+           border-radius: 3vw;
+           margin-top: 2vw;
+           
+        }
+    </style>
+    <body bgcolor="white" id="mainbody">
+       <div>
+            <h1 id="topText">Counter</h1>
+        
+    
+        <div id="textContainer">
+            <h1 id="numberContainer">3</h1>
+        </div>
+        <div id="button">
+            <button onclick="decrement()" class="clickbutton"> Decrease</button>
+            <button onclick="reset()" class="clickbutton"> Reset</button>
+            <button onclick="increment()" class="clickbutton"> Increase</button>
+        </div>
+    </div>
+    <script>
+        function increment()
+        {
+       
+    var currentNumber = document.getElementById("numberContainer").innerHTML
+            var b= parseInt(currentNumber);
+            b += 1;
+            document.getElementById("numberContainer").innerHTML = b;
+        }
+        function decrement()
+        {
+            var currentNumber   = document.getElementById("numberContainer").innerHTML
+            var b= parseInt(currentNumber);
+            b-=1;
+            document.getElementById("numberContainer").innerHTML = b;
+        }
+        function reset ()
+        {
+            document.getElementById("numberContainer").innerHTML = 0;
+        }
+    </script>
+
+    </body>
+</html>

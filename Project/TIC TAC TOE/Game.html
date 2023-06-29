@@ -1,0 +1,403 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Tok Game</title>
+</head>
+<style>
+    #mainbody {
+        display: flex;
+        background: url('background.jpg');
+       
+
+    }
+
+    #mainContainer {
+        width: 80vw;
+        height: auto;
+        margin: 0 auto;
+        
+        align-items: center;
+        
+        display: flex;
+        flex-direction: column;
+        opacity: 90%;
+
+
+        margin: auto;
+    }
+
+    .box_row {
+        width: 60%;
+        height: auto;
+        flex: 1;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .innerbox_1 {
+        flex: 1;
+        background-color: purple;
+        height: auto;
+        margin: 0.4%;
+        color: white;
+        font-size: 3vw;
+        padding: 3vw;
+        text-align: center;
+        border-radius: 1vw;
+
+
+
+    }
+
+    #toptext {
+        text-align: center;
+        font-size: 3vw;
+        color: white;
+    }
+    #reset_button {
+        color: white;
+        background-color: #FB60E8;
+        font-size: 2vw;
+        border-radius: 4vw;
+        opacity: 90%;
+    }
+</style>
+
+<body id="mainbody" >
+    <div id="mainContainer">
+        <h3 id="toptext">Game Start</h3>
+        <div class="box_row">
+            <div class="innerbox_1" onclick="box_1()" id="box_1">
+                1</div>
+            <div class="innerbox_1" onclick="box_2()" id="box_2">
+                2</div>
+            <div class="innerbox_1" onclick="box_3()" id="box_3">
+                3</div>
+
+        </div>
+        <div class="box_row">
+            <div class="innerbox_1" onclick="box_4()" id="box_4">
+                4</div>
+            <div class="innerbox_1" onclick="box_5()" id="box_5">
+                5
+            </div>
+            <div class="innerbox_1" onclick="box_6()" id="box_6">
+                6
+            </div>
+
+        </div>
+        <div class="box_row">
+            <div class="innerbox_1" onclick="box_7()" id="box_7">
+                7
+            </div>
+            <div class="innerbox_1" onclick="box_8()" id="box_8">
+                8
+            </div>
+            <div class="innerbox_1" onclick="box_9()" id="box_9">
+                9
+            </div>
+
+        </div>
+        <button id="reset_button" onclick="button_reset()" >RESET</button>
+    </div>
+    <script>
+        var chance = 0;
+        var counter = 0;
+        function box_1() {
+            if (document.getElementById("box_1").innerHTML == 1)
+                if (chance == 1) {
+                    document.getElementById("box_1").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_1").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+        }
+        function box_2() {
+            if (document.getElementById("box_2").innerHTML == 2)
+                if (chance == 1) {
+                    document.getElementById("box_2").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_2").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+        }
+        function box_3() {
+            if (document.getElementById("box_3").innerHTML == 3)
+                if (chance == 1) {
+                    document.getElementById("box_3").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_3").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+        }
+        function box_4() {
+            if (document.getElementById("box_4").innerHTML == 4)
+                if (chance == 1) {
+                    document.getElementById("box_4").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_4").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+        }
+        function box_5() {
+            if (document.getElementById("box_5").innerHTML == 5)
+                if (chance == 1) {
+                    document.getElementById("box_5").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_5").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+        }
+        function box_6() {
+            if (document.getElementById("box_6").innerHTML == 6)
+                if (chance == 1) {
+                    document.getElementById("box_6").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_6").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+        }
+        function box_7() {
+            if (document.getElementById("box_7").innerHTML == 7)
+                if (chance == 1) {
+                    document.getElementById("box_7").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_7").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+        }
+        function box_8() {
+            if (document.getElementById("box_8").innerHTML == 8)
+                if (chance == 1) {
+                    document.getElementById("box_8").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_8").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+        }
+        function box_9() {
+            if (document.getElementById("box_9").innerHTML == 9)
+                if (chance == 1) {
+                    document.getElementById("box_9").innerHTML = "x";
+                    chance = 0;
+                }
+                else {
+                    document.getElementById("box_9").innerHTML = "0";
+                    chance = 1;
+                }
+            checkWin();
+            if (counter>=9)
+            {
+                alert("Game over");
+            }
+            else{
+                counter +=1;
+            }
+            if (chance == 1) {
+                document.getElementById("toptext").innerHTML = "Player X chance";
+            }
+            else {
+                document.getElementById("toptext").innerHTML = "Player 0 chance";
+            }
+
+
+        }
+        function checkWin() {
+            if (
+                document.getElementById("box_1").innerHTML == document.getElementById("box_2").innerHTML
+                &&
+                document.getElementById("box_2").innerHTML == document.getElementById("box_3").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (document.getElementById("box_4").innerHTML == document.getElementById("box_5").innerHTML
+                &&
+                document.getElementById("box_5").innerHTML == document.getElementById("box_6").innerHTML) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_7").innerHTML == document.getElementById("box_8").innerHTML
+                &&
+                document.getElementById("box_8").innerHTML == document.getElementById("box_9").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_1").innerHTML == document.getElementById("box_4").innerHTML
+                &&
+                document.getElementById("box_4").innerHTML == document.getElementById("box_7").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_2").innerHTML == document.getElementById("box_5").innerHTML
+                &&
+                document.getElementById("box_5").innerHTML == document.getElementById("box_8").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_3").innerHTML == document.getElementById("box_6").innerHTML
+                &&
+                document.getElementById("box_6").innerHTML == document.getElementById("box_9").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_1").innerHTML == document.getElementById("box_5").innerHTML
+                &&
+                document.getElementById("box_5").innerHTML == document.getElementById("box_9").innerHTML
+            ) {
+                alert("game over");
+            }
+            if (
+                document.getElementById("box_3").innerHTML == document.getElementById("box_5").innerHTML
+                &&
+                document.getElementById("box_5").innerHTML == document.getElementById("box_7").innerHTML
+            ) {
+            }
+        }
+        function button_reset() {
+            window.location.reload();
+        }
+
+    </script>
+</body>
+
+</html>
